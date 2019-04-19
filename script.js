@@ -5,6 +5,10 @@
 const image = document.getElementsByClassName("choice-grid")[0].children;
 const image_1 = document.getElementsByClassName("choice-grid")[1].children;
 const image_2 = document.getElementsByClassName("choice-grid")[2].children;
+const result = document.getElementsByClassName("result_button")[0];
+var flag = Boolean(false);
+var flag_1 = Boolean(false);
+var flag_2 = Boolean(false);
 
 for(let val of image)
 {
@@ -22,6 +26,8 @@ for(let val of image)
     val.getElementsByClassName("checkbox")[0].src="./images/checked.png";
     val.classList.toggle("opacity", false);
     val.classList.toggle("click_effect", true);
+    flag=true;
+    console.log(flag);
   });
 }
 
@@ -38,6 +44,8 @@ for(let val of image_1)
     val.getElementsByClassName("checkbox")[0].src="./images/checked.png";
     val.classList.toggle("opacity", false);
     val.classList.toggle("click_effect", true);
+    flag_1=true;
+    console.log(flag_1);
   });
 }
 
@@ -55,5 +63,7 @@ for(let val of image_2)
     val.getElementsByClassName("checkbox")[0].src="./images/checked.png";
     val.classList.toggle("opacity", false);
     val.classList.toggle("click_effect", true);
+    flag_2=true;
+    console.log(flag_2);
   });
 }
