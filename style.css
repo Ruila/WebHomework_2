@@ -60,6 +60,10 @@ img {
   cursor: pointer;
 }
 
+.quiz_button:hover {
+  background: #e0e0e0;
+}
+
 .hide{
   display: none;
 }
